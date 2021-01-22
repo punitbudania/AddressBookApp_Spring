@@ -1,6 +1,8 @@
 package com.bridgelabz.addressbook.dtos;
 
-public class ContactDTO
+import lombok.Data;
+
+public @Data class ContactDTO
 {
     public String name;
     public String address;
@@ -9,10 +11,5 @@ public class ContactDTO
     {
         this.name = name;
         this.address = address;
-    }
-
-    public String toString()
-    {
-        return "name=" + name + ":address=" + address;
     }
 }
